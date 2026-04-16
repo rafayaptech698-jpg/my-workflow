@@ -1,0 +1,9 @@
+name: CI Workflow
+on: [push] # Triggers on Every push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3 # Checks out your repository
+      - name: Run a script
+        run: echo "Hello, World!"
